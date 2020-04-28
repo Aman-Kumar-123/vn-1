@@ -365,9 +365,19 @@ screen main_menu():
     frame:
         pass
 
+
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    imagebutton idle "gui/main_menu/button_start.png" hover "gui/main_menu/button_start_after.png" xpos 0.42 ypos 0.5 focus_mask True action Start()
+    # xalign 0.5 xpos 0.5 ypos 0.2
+    imagebutton idle "gui/main_menu/button_load.png" hover "gui/main_menu/button_load_after.png" xpos 0.42 ypos 0.58 focus_mask True action ShowMenu("load")
+    # textbutton _("Load") xalign 0.5 xpos 0.5 ypos 0.5 action ShowMenu("load")
+    imagebutton idle "gui/main_menu/button_preferences.png" hover "gui/main_menu/button_preferences_after.png" xpos 0.42 ypos 0.66 focus_mask True action ShowMenu("preferences")
+    #textbutton _("Options") xalign 0.5 xpos 0.5 ypos 0.55 action ShowMenu("preferences")
+    # textbutton _("Return") xalign 0.5 ypos 0.6 action Return()
+    imagebutton idle "gui/main_menu/button_quit.png" hover "gui/main_menu/button_quit_after.png" xpos 0.42 ypos 0.74 focus_mask True action Quit(confirm=not main_menu)
+    # textbutton _("Quit") xalign 0.5 xpos 0.5 ypos 0.6 action Quit(confirm=not main_menu)
+    text "The Strange Game" xpos 0.70 ypos 0.1 size 50 color "#171a18"
 
     if gui.show_name:
 
@@ -379,6 +389,7 @@ screen main_menu():
                 style "main_menu_version"
 
 
+
 style main_menu_frame is empty
 style main_menu_vbox is vbox
 style main_menu_text is gui_text
@@ -386,10 +397,12 @@ style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
 style main_menu_frame:
-    xsize 280
-    yfill True
+     xsize 420
+     yfill True
 
-    background "gui/overlay/main_menu.png"
+     background "gui/overlay/main_menu.png"
+
+
 
 style main_menu_vbox:
     xalign 1.0

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 24: expected statement.
-    zoom image_fit("c.png",{400,1000})
-                  ^
+File "game/screens.rpy", line 380: u'px' is not a keyword argument or valid child for the text statement.
+    text "The Strange Game" xpos 0.42 ypos 0.1 size 50px
+                                                        ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Apr 25 18:43:48 2020
+Mon Apr 27 14:29:16 2020

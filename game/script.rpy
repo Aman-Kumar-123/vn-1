@@ -21,11 +21,18 @@ label start:
     # directory.
 
     show a3 at left
-    call screen aman
 
     # These display lines of dialogue.
 
-    
+    e "Hi There"
+
+    e "Finally you come to (game name). This is my story"
+
+    e "It in my Fate to see you. Because my story is incomplete without you"
+
+    e "My the small program of this (game name). Which resid in your small space of (RAM SIZE) RAM"
+
+    e "Would you like help to reach my destination gate and end of (game name)"
 
 
     # This ends the game.

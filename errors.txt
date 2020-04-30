@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 380: u'px' is not a keyword argument or valid child for the text statement.
-    text "The Strange Game" xpos 0.42 ypos 0.1 size 50px
-                                                        ^
+File "game/script.rpy", line 44: choice menuitem expects a non-empty block.
+    "YES":
+          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Apr 27 14:29:16 2020
+Thu Apr 30 14:18:06 2020

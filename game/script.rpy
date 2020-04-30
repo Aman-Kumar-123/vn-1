@@ -33,6 +33,16 @@ label start:
     e "My the small program of this (game name). Which resid in your small space of (RAM SIZE) RAM"
 
     e "Would you like help to reach my destination gate and end of (game name)"
+    menu:
+        e "I know you would help me."
+        "Like to proceed":
+             e "HOORAY!! Let's go."
+        "QUIT":
+            e "I think this is not right for you ."
+            return
+        
+    e "Let's begin with character introduction of our world."
+
 
 
     # This ends the game.
